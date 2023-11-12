@@ -1,0 +1,44 @@
+Universe database
+
+Table 'galaxy'
+Primary Column 'galaxy_id' Serial
+Column 'name' varchar 255 not null
+Column 'total_planets' varchar 255 not null
+Column 'total_stars' varchar 255 not null
+Column 'description' text
+
+
+Table 'star'
+Primary Column 'star_id' Serial
+Column 'name' varchar 255 not null
+Column 'size_in_km_mn' numeric
+Column 'temperature_in_celsius' varchar 255
+Column 'planets_orbiting_it' int
+Foreign Column 'galaxy_id' int references 'galaxy_id'
+
+
+Table 'planet'
+Primary Column 'planet_id' Serial
+Column 'name' varchar 255 not null
+Column 'size_in_km_mn' numeric not null
+Column 'total_moons' int
+Column 'water_available' boolean
+Column 'temperature_in_celsius' varchar 255
+Foreign Column 'state' varchar 32 references 'name' in state
+Foreign Column 'star_id' int references 'star_id'
+
+
+Table 'moon'
+Column 'moon_id' Serial
+Column 'name' varchar 255 not null
+Column 'size_in_km_mn' numeric not null
+Column 'orbit_period_days' numeric
+Column 'explored' boolean
+Foreign Column 'planet_id' int references 'planet_id'
+
+
+Table 'state'
+Primary Column 'state_id' Serial
+Column name varchar 255 unique
+(Solid, Gas, Others)
+
