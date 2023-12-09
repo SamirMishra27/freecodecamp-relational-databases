@@ -1,0 +1,40 @@
+codeally@873efee41f3e:~/project/number_guessing_game$ git log
+commit 0e879632fc4e2eecc01928e55a03f708ade82f48 (HEAD -> main)
+Author: Samir Mishra 
+Date:   Sat Dec 9 13:21:37 2023 -0500
+
+    feat: add guess the number logic and implement final stuff
+    
+    Add guess the number logic and implement logic to enter stats into the
+    database.
+
+commit a311cc676a10ff8f79694aeb93eecb766b8fcffa
+Author: Samir Mishra 
+Date:   Sat Dec 9 13:20:42 2023 -0500
+
+    feat: implement logic to get & register user data from the database
+    
+    ...and implement interface to get username and display data.
+
+commit e44326fcf22673b80fb066c7bb7c8520dd0f2b01
+Author: Samir Mishra 
+Date:   Sat Dec 9 13:19:28 2023 -0500
+
+    feat: add table data from tests
+    
+    Well this needs no explaination.
+
+commit 0f5d407631a919402a91e2fe39e85bba33cf6f24
+Author: Samir Mishra 
+Date:   Sat Dec 9 13:01:11 2023 -0500
+
+    feat: add commands.sql file to project
+    
+    Add database commands reference list file to the project. That will be
+    executed later to create the database structure.
+
+commit aef77c1bfa8568e918cc2d667ae2a2b0c1d7b2c0
+Author: Samir Mishra 
+Date:   Sat Dec 9 13:00:10 2023 -0500
+
+    Initial commit
